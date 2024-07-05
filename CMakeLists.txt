@@ -6,7 +6,7 @@ INCLUDE_DIRECTORIES( ${Boost_INCLUDE_DIR} )
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(LoadBalancer main.cpp
+add_executable(LoadBalancerApp main.cpp
         Networking/TCP/Server/TCPServer.cpp
         Networking/TCP/Server/TCPServer.h
         Networking/TCP/TCPConnection.cpp
@@ -15,4 +15,4 @@ add_executable(LoadBalancer main.cpp
         Networking/HTTP/Server/HTTPServer.h
         LoadBalancer/LoadBalancer.cpp
         LoadBalancer/LoadBalancer.h)
-TARGET_LINK_LIBRARIES(LoadBalancer LINK_PUBLIC ${Boost_LIBRARIES} )
+TARGET_LINK_LIBRARIES(LoadBalancerApp LINK_PUBLIC ${Boost_LIBRARIES} )
